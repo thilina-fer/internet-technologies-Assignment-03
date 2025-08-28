@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Assests/normalize.css">
+    <style>
+        #outer_border{
+            width: 350px;
+            height: 350px;
+            border: 20px solid gray;
+            border-radius: 100%;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            z-index: 11;
+
+        }
+
+        #inner_border{
+            width: 310px;
+            height: 310px;
+            border: 20px solid red;
+            border-radius: 100%;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            z-index: 10;
+
+        }
+
+        #scroll_area{
+            height: 100%;
+            width: 100%;
+            overflow-y: scroll;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .scroll{
+            width: 330px;
+            height: 330px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            color: white;
+            margin: 400px;
+            right: 30px;
+        }
+
+        #scroll_content1{
+            background-color: purple;
+        }
+
+        #scroll_content2{
+            background-color: black;
+        }
+
+        #scroll_content3{
+            background-color: greenyellow;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="scroll_area">
+    <div id="scroll_content1" class="scroll">
+        <p>Hello</p>
+    </div>
+
+    <div id="scroll_content2" class="scroll">
+        <p>Hello</p>
+    </div>
+
+    <div id="scroll_content3" class="scroll">
+        <p>Hello</p>
+    </div>
+</div>
+
+
+<div id="outer_border"></div>
+<div id="inner_border"></div>
+
+</body>
+</html>
