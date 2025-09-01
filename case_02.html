@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Assests/normalize.css">
+
+    <style>
+        header{
+            background-color: bisque;
+            height: 50px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+        }
+
+        header>img{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: 50px;
+        }
+
+        header>nav{
+            position: absolute;
+            height: fit-content;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            right: 50px;
+            font-size: 25px;
+        }
+
+        footer{
+            height: 50px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            background-color: gray;
+            display: flex;
+        }
+
+        footer>p{
+           position: fixed;
+          align-self: center;
+         
+        }
+
+                section>div{
+            top: 50px;
+            bottom: 40px;
+            position: fixed;
+            height: 100%;
+            width: 200px;
+            background: purple;
+        }
+
+        section>div>nav{
+            width: fit-content;
+            position: absolute;
+            left: 20px;
+            top: 50px;
+           
+        }
+        section>div>nav>a{
+            color: white;
+        }
+
+                
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Assests/ijse.png" title="ijse" width="100" alt="ijse">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+     <section>
+    <div>
+          <nav>
+            <a href="#">Home</a>
+            <br>
+            <a href="#">Service</a>
+            <br>
+            <a href="#">About</a>
+            <br>
+            <a href="#">Contact Us</a>
+            <br>
+          </nav>
+    </div>
+    </section>
+
+    <section id="section_1">
+        <div ></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <footer>
+        <p>Developed by IJSE</p>
+    </footer>
+    
+</body>
+</html>
